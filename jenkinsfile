@@ -7,7 +7,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scm
+                git url:'https://github.com/DevOps-010/jenkins-java-nitish.git', branch:'main'
+                echo "Checkout Complete"
             }
         }
 
